@@ -5,12 +5,11 @@ const Item = ({ item }) => {
     const {
         img,
     } = item
-    const srcImg = require('../assets/img/food/comida-di-buteco-4.jpg');
     return (
-        <View>
+        <View style={styles.item}>
             <Image
                 style={styles.image}
-                source={srcImg} />
+                source={img} />
         </View>
     )
 }
@@ -18,6 +17,10 @@ const Item = ({ item }) => {
 export default Item;
 
 const styles = StyleSheet.create({
+    item: {
+        height: 100,
+        width: 100,
+    },
     image: {
         with: 50,
         height: 50,

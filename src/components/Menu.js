@@ -11,7 +11,6 @@ const Menu = ({ menu }) => {
             <Text style={styles.title}>{title}</Text>
             <View style={styles.itens}>
                 {itens.map(item => <Item item={item} />)}
-
             </View>
         </View>
     )
@@ -28,6 +27,6 @@ const styles = StyleSheet.create({
         fontFamily: 'Righteous'
     },
     itens: {
-
+        flexDirection: 'row',
     }
 });
